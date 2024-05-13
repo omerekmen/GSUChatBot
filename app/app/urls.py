@@ -21,5 +21,6 @@ from .views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", index, name="index")
+    path('', index, name='index'),
+    path('get_response/', get_response, name='get_response'),
 ]
